@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inicio · HuertoHogar</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+<header class="site">
+  <div class="container nav">
+    <div class="brand">
+  <img src="assets/img/huerto_hogar.jpeg" alt="Logo HuertoHogar" style="width:36px;height:36px;object-fit:cover;border-radius:8px;margin-right:8px;">
+  <a href="index.html">HuertoHogar</a>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+        <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
+        <li class="nav-item"><a class="nav-link" href="pedido.html">Pedido</a></li>
+        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Ingresar</a></li>
+        <li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
+        <li class="nav-item"><a class="nav-link" href="perfil.html">Perfil</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+<section class="hero">
+  <div>
+    <h1>Del campo a tu hogar</h1>
+    <p>Frutas y verduras orgánicas. Productos lácteos y alimentos saludables. Compra simple y rápida.</p>
+    <div class="controls">
+  <a class="btn btn-success" href="catalogo.html">Ver catálogo</a>
+  <a class="btn btn-outline-success" href="registro.html" style="background:none;">Crear cuenta</a>
+    </div>
+  </div>
+  <div class="card shadow-sm p-3 mb-4" style="max-width:600px;margin:auto;">
+  <video controls poster="assets/img/huerto_hogar.jpeg" style="width:100%;border-radius:8px;">
+    <source src="assets/video/video.mp4" type="video/mp4">
+    Tu navegador no soporta video HTML5.
+  </video>
+  <p class="help text-center">Video demostrativo del funcionamiento de HuertoHogar y Productos organicos</p>
+</div>
+  
+</section>
+
+<section>
+  <h2>Categorías destacadas</h2>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="catsHome"></div>
+</section>
+
+<section class="category-descriptions mb-4" style="background:#f8f9fa;padding-top:1.5rem;padding-bottom:0.5rem;">
+  <div class="container">
+    <h2 class="mb-3">Categorías y Descripciones</h2>
+    <div class="mb-3">
+      <h4>Frutas Frescas</h4>
+      <p>Nuestra selección de frutas frescas ofrece una experiencia directa del campo a tu hogar. Estas frutas se cultivan y cosechan en el punto óptimo de madurez para asegurar su sabor y frescura. Disfruta de una variedad de frutas de temporada que aportan vitaminas y nutrientes esenciales a tu dieta diaria. Perfectas para consumir solas, en ensaladas o como ingrediente principal en postres y smoothies.</p>
+    </div>
+    <div class="mb-3">
+      <h4>Verduras Orgánicas</h4>
+      <p>Descubre nuestra gama de verduras orgánicas, cultivadas sin el uso de pesticidas ni químicos, garantizando un sabor auténtico y natural. Cada verdura es seleccionada por su calidad y valor nutricional, ofreciendo una excelente fuente de vitaminas, minerales y fibra. Ideales para ensaladas, guisos y platos saludables, nuestras verduras orgánicas promueven una alimentación consciente y sostenible.</p>
+    </div>
+    <div class="mb-3">
+      <h4>Productos Orgánicos</h4>
+      <p>Nuestros productos orgánicos están elaborados con ingredientes naturales y procesados de manera responsable para mantener sus beneficios saludables. Desde aceites y miel hasta granos y semillas, ofrecemos una selección que apoya un estilo de vida saludable y respetuoso con el medio ambiente. Estos productos son perfectos para quienes buscan opciones alimenticias que aporten bienestar sin comprometer el sabor ni la calidad.</p>
+    </div>
+    <div class="mb-3">
+      <h4>Productos Lácteos</h4>
+      <p>Los productos lácteos de HuertoHogar provienen de granjas locales que se dedican a la producción responsable y de calidad. Ofrecemos una gama de leches, yogures y otros derivados que conservan su frescura y sabor auténtico. Ricos en calcio y nutrientes esenciales, nuestros lácteos son perfectos para complementar una dieta equilibrada, proporcionando el mejor sabor y nutrición para toda la familia.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site">
+  <div class="container inner">
+    <div class="cols">
+      <div>
+        <strong>HuertoHogar</strong>
+        <p>Productos frescos y orgánicos. Calidad local.</p>
+      </div>
+      <div>
+        <p><strong>Tiendas</strong></p>
+        <p>Santiago · Puerto Montt · Villarrica · Nacimiento</p>
+        <p>Viña del Mar · Valparaíso · Concepción</p>
+      </div>
+      <div>
+        <p><strong>Contacto</strong></p>
+        <p>contacto@huertohogar.cl</p>
+      </div>
+    </div>
+    <div>© 2025 HuertoHogar · Sitio educativo</div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js" defer></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded',()=>{
+      const cur = 'index.html';
+      document.querySelectorAll('nav a').forEach(a=>{if(a.getAttribute('href').includes(cur)) a.classList.add('active')});
+    });
+    </script>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

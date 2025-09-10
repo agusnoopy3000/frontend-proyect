@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog · HuertoHogar</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<style>
+  h3.destacado {
+    color: #198754;
+    background: #e9fbe7;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px #0001;
+    margin-bottom: 12px;
+    display: inline-block;
+  }
+</style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+<header class="site">
+  <div class="container nav">
+    <div class="brand">
+  <img src="assets/img/huerto_hogar.jpeg" alt="Logo HuertoHogar" style="width:36px;height:36px;object-fit:cover;border-radius:8px;margin-right:8px;">
+  <a href="index.html">HuertoHogar</a>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+        <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
+        <li class="nav-item"><a class="nav-link" href="pedido.html">Pedido</a></li>
+        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Ingresar</a></li>
+        <li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
+        <li class="nav-item"><a class="nav-link" href="perfil.html">Perfil</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+<section class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+  <article class="card shadow-sm p-3">
+  <h3 class="destacado">Cómo elegir frutas de temporada</h3>
+    <p>Elegir frutas de temporada es clave para disfrutar de productos más frescos, sabrosos y económicos. Las frutas de temporada suelen estar en su punto óptimo de maduración, lo que significa mejor sabor y mayor valor nutricional. Además, al consumir productos locales y de temporada, apoyas a los agricultores de tu zona y reduces la huella de carbono. Antes de comprar, infórmate sobre cuáles son las frutas propias de cada estación y busca aquellas que luzcan firmes, con buen color y aroma natural. Evita las que tengan golpes o manchas oscuras.</p>
+    <a href="https://www.odepa.gob.cl/precios/mejores-alimentos-de-temporada" target="_blank">Ver más sobre frutas de temporada</a>
+  </article>
+  <article class="card shadow-sm p-3">
+  <h3 class="destacado">Beneficios de productos orgánicos</h3>
+    <p>Los productos orgánicos se cultivan sin pesticidas ni fertilizantes sintéticos, lo que los hace más saludables para ti y para el medio ambiente. Consumir orgánicos puede reducir la exposición a residuos químicos y aportar más antioxidantes y nutrientes. Además, la agricultura orgánica promueve la biodiversidad, cuida los suelos y utiliza prácticas sostenibles. Al elegir productos orgánicos, contribuyes a una alimentación más natural y apoyas métodos de producción responsables con la naturaleza.</p>
+    <a href="https://www.tuasaude.com/es/que-son-los-alimentos-organicos/" target="_blank">Ver mas sobre los beneficios de alimentos organicos</a>
+  </article>
+</section>
+
+</main>
+<footer class="site">
+  <div class="container inner">
+    <div class="cols">
+      <div>
+        <strong>HuertoHogar</strong>
+        <p>Productos frescos y orgánicos. Calidad local.</p>
+      </div>
+      <div>
+        <p><strong>Tiendas</strong></p>
+        <p>Santiago · Puerto Montt · Villarrica · Nacimiento</p>
+        <p>Viña del Mar · Valparaíso · Concepción</p>
+      </div>
+      <div>
+        <p><strong>Contacto</strong></p>
+        <p>contacto@huertohogar.cl</p>
+      </div>
+    </div>
+    <div>© 2025 HuertoHogar · Sitio educativo</div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js" defer></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded',()=>{
+      const cur = 'blog.html';
+      document.querySelectorAll('nav a').forEach(a=>{if(a.getAttribute('href').includes(cur)) a.classList.add('active')});
+    });
+    </script>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

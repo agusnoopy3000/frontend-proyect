@@ -1,0 +1,84 @@
+/* Paleta y tipografías del caso HuertoHogar
+   Fondo: #F7F7F7
+   Acentos: #2E8B57 (verde), #FFD700 (dorado), #8B4513 (marrón)
+   Texto: #333 y #666
+   Tipos: Montserrat (UI), Playfair Display (titulares)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@600;700&display=swap');
+
+:root{
+  --bg:#F7F7F7;
+  --green:#2E8B57;
+  --gold:#FFD700;
+  --brown:#8B4513;
+  --text:#333;
+  --muted:#666;
+  --shadow: 0 10px 20px rgba(0,0,0,.06);
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Montserrat,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+
+a{color:var(--green);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.container{width:min(1100px, 92%);margin:0 auto}
+
+header.site{background:linear-gradient(180deg,#fff,rgba(255,255,255,.9));position:sticky;top:0;z-index:10;box-shadow:var(--shadow)}
+.nav{display:flex;align-items:center;gap:18px;justify-content:space-between;padding:12px 0}
+.brand a{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--brown)}
+.brand .logo{width:34px;height:34px;border-radius:10px;background:var(--green)}
+nav ul{list-style:none;display:flex;gap:14px;margin:0;padding:0;flex-wrap:wrap}
+nav a{padding:8px 12px;border-radius:10px}
+nav a.active, nav a:hover{background:rgba(46,139,87,.1)}
+
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;align-items:center;padding:28px 0}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,44px);line-height:1.1;margin:0 0 10px}
+.hero p{color:var(--muted)}
+.hero .card{background:#fff;border-radius:18px;box-shadow:var(--shadow);padding:16px}
+.hero video{width:100%;border-radius:12px;outline:0;display:block}
+
+.grid{display:grid;gap:16px}
+.grid.cards{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:#fff;border-radius:18px;box-shadow:var(--shadow);padding:16px}
+.card h3{margin:8px 0 6px;font-size:18px}
+.price{font-weight:700;color:var(--brown)}
+.badge{display:inline-block;background:var(--green);color:#fff;border-radius:999px;padding:2px 10px;font-size:12px}
+
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:10px 0}
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="date"], select{
+  width:100%;padding:10px 12px;border:1px solid #ddd;border-radius:12px;background:#fff;outline:none;
+}
+label{font-weight:600;font-size:14px;display:block;margin:8px 0 6px}
+button, .btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:12px;padding:10px 14px;
+  background:var(--green);color:#fff;font-weight:600;cursor:pointer;box-shadow:var(--shadow)}
+button.secondary{background:var(--brown)}
+button.ghost{background:transparent;color:var(--green);border:1px solid var(--green)}
+button:disabled{opacity:.6;cursor:not-allowed}
+
+.form{background:#fff;border-radius:18px;box-shadow:var(--shadow);padding:18px}
+.form .help, .error{font-size:13px}
+.error{color:#b00020}
+.help{color:var(--muted)}
+
+.table{width:100%;border-collapse:separate;border-spacing:0}
+.table th, .table td{padding:10px 12px;border-bottom:1px solid #eee}
+.table th{text-align:left;color:var(--muted);font-weight:600}
+.table tfoot td{font-weight:700}
+
+footer.site{margin-top:32px;background:#fff;border-top:1px solid #eee}
+footer .inner{display:grid;gap:12px;padding:18px 0;color:var(--muted);font-size:14px}
+footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr}
+}
+
+
+/* Ajustes para convivencia con Bootstrap */
+.btn-success{ background-color: var(--green); border-color: var(--green); }
+.btn-outline-success{ color: var(--green); border-color: var(--green); }
+.btn-outline-success:hover{ background-color: rgba(46,139,87,.1); color: var(--green); }
+.navbar .nav-link.active{ background: rgba(46,139,87,.1); border-radius: .5rem; }
+.card.shadow-sm.p-3{ border-radius: 1rem; }
+
